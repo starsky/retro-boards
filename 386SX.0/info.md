@@ -60,10 +60,12 @@ Jumpers are explained in the pdf in the doc directory.
 
 # Other
 The power good circuit consists of 100nF capacitor and 10k resistor. It looks like this:
+```
 PG-----|---|------out
        C   R
        |   |
       gnd +5V
+```
 When powere supply starts it is an open collector thus current flows thru resistor to PG.
 Next when power supply is ready, it is no longer a open collector, thus current flows from
 +5V through resistor and capacitor. It gives ceratin delay, before reset signal is off.
